@@ -1,0 +1,59 @@
+
+
+@media screen and ( max-width: 870px ) {
+    .song-card>.song {
+        width: calc( (100% / 4) - 10px);
+    }
+}
+
+@media screen and ( max-width: 552px ) {
+    nav {
+        width: 70px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo, #menu, #plus, #playlist, #user, nav>.white{
+        display: none;
+    }
+
+    #ico-small {
+        display: block;
+    }
+
+    #user-ico {
+        display: block;
+        width: 100%;
+    }
+
+    #ico-small img{ 
+        width: 30px;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    #user-ico>.profile {
+        width: 100%;
+    }
+
+    main {
+        width: calc( 100% - 70px );
+    }
+
+    .song-card {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    /* .song-card>.song{
+        flex-basis: 45%;
+    } */
+
+    .song-card>.song {
+       width: calc( (100% / 2) - 10px);
+    }
+}
+
+
