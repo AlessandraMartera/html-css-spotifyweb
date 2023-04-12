@@ -15,6 +15,16 @@ body {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: #7b7d82;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c7c7c7;
+}
+
 .white {
     color: #fff;
 }
@@ -26,6 +36,7 @@ body {
 .left-evi {
     border-left: 2px solid greenyellow;
 }
+
 
 /* Nav */
 nav {
@@ -55,7 +66,7 @@ nav ul  {
     margin: 20px 0;
 }
 
-#plus>div {
+#plus div {
     display: inline-block;
     color: #000;
     font-size: 30px;
@@ -123,6 +134,7 @@ main {
 
 #upgrade { 
     position: absolute;
+    z-index: 1000;
     width: 100%;
     height: 100px;
     padding: 25px 10px;
@@ -137,6 +149,11 @@ main {
     border: 2px solid #fff;
     background-color: #00000000;
     cursor: pointer;
+}
+
+#upgrade button:hover {
+    font-size: 15px;
+    font-weight: 600;
 }
 
 #album {
@@ -164,10 +181,18 @@ section {
     flex-wrap: wrap;
 }
 
-.choice>span:hover {
+.choice>div:hover {
     height: fit-content;
     cursor: pointer;
-    border-bottom: 1px solid greenyellow;
+    font-weight: 600;
+}
+
+.highlighter {
+    width: 40%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: #02fc02;
+    border-radius: 30px;
 }
 
 /* recent section */
@@ -184,8 +209,27 @@ section {
     margin-top: 15px;
     width: calc( (100% / 6) - 10px);
     text-align: center;
+    position: relative;
+    transition: all 3s ease;
 }
 
+.layover {
+    display: none;
+}
+.card:hover .layover {
+    width: 100%;
+    height: 185px;
+    background-color: #0000007f;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    cursor: pointer;
+
+}
 
 .artist {
     border-radius: 100px;
@@ -208,6 +252,11 @@ footer {
     background: #282828;
     display: flex;
     justify-content: space-between;
+}
+footer i:hover{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 footer>div {
@@ -262,10 +311,14 @@ footer>div {
     background-color: #5a5a5a;
 }
 
+
 .prog-bar hr {
     height: 100%;
     background-color: #c7c7c7;
     width: 20%;
+}
+.time-song:hover hr, .prog-bar:hover hr, .fa-volume-high:hover hr {
+    background-color: greenyellow;
 }
 
 .right-footer {
@@ -279,8 +332,5 @@ footer>div {
 
 /* Debug */
 
-footer>div {
-    border: 1px dotted yellow;
 
-}
 
