@@ -210,15 +210,16 @@ section {
     width: calc( (100% / 6) - 10px);
     text-align: center;
     position: relative;
-    transition: all 3s ease;
 }
 
 .layover {
     display: none;
+    transition: all 3s ease;
 }
+
 .card:hover .layover {
     width: 100%;
-    height: 185px;
+    height: 100%;
     background-color: #0000007f;
     font-size: 50px;
     display: flex;
