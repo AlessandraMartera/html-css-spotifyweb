@@ -22,6 +22,7 @@ body {
 .gray {
     color: #5a5a5a;
 }
+
 .left-evi {
     border-left: 2px solid greenyellow;
 }
@@ -48,9 +49,6 @@ nav {
 #logo {
     width: 70%;
 }
-
-
-
 
 nav ul  {
     list-style: none;
@@ -84,11 +82,6 @@ li svg {
 #playlist {
     flex-grow: 1;
     overflow: auto;
-}
-
-#user {
-    border: 1px solid pink;
-
 }
 
 #user>div:first-child {
@@ -158,6 +151,7 @@ section {
     padding: 15px;
     color: #fff;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 /* choice section */
@@ -199,6 +193,11 @@ section {
 
 .card img {
     max-width: 100%;
+    margin: 20px 0;
+}
+
+section .gray {
+    margin-top: 20px;
 }
 
 /* Footer */
@@ -212,30 +211,76 @@ footer {
 }
 
 footer>div {
-    height: 100%;
+    max-height: 100%;
     color: #fff;
+}
+
+.left-footer {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3px;
+}
+
+.left-footer img {
+    width: 20%;
+}
+
+.left-footer .text {
+    width: 45%;
+    font-size: 10px;
+}
+
+.left-footer i {
+    margin-right: 10px;
+}
+
+.center-footer {
+    width: 40%;
+}
+
+.icon {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.time-song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prog-bar {
+    width: 70%;
+    height: 3px;
+    background-color: #5a5a5a;
+}
+
+.prog-bar hr {
+    height: 100%;
+    background-color: #c7c7c7;
+    width: 20%;
+}
+
+.right-footer {
+    width: 20%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:4px;
 }
 
 /* Debug */
 
-#upgrade {
-    border: yellow solid 3px;
-}
-
-#album {
-    border: rgb(0, 255, 30) solid 3px
-}
-
-main {
-    border: 2px solid violet;
-}
-
 footer>div {
     border: 1px dotted yellow;
-    width: 200px;
+
 }
 
-#album>section {
-    min-height: 100px;
-    border: 1px dotted blanchedalmond;
-}
