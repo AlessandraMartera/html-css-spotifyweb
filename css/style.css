@@ -97,6 +97,14 @@ li svg {
     padding-bottom: 10px;
 }
 
+.line {
+    display: flex;
+}
+
+.line>span {
+    margin-left: 10px;
+}
+
 .profile {
     display: inline-block;
     width: 25px;
@@ -148,6 +156,8 @@ main {
 /* general setting section */
 section {
     padding: 15px;
+    color: #fff;
+    font-weight: 600;
 }
 
 /* choice section */
@@ -167,11 +177,8 @@ section {
 }
 
 /* recent section */
-.recent {
-    color: #fff;
-}
 
-.song-card {
+.card-album {
     width: 100%;
     display: flex;
     gap: 10px;
@@ -179,13 +186,18 @@ section {
 }
 
 
-.song {
+.card {
     margin-top: 15px;
     width: calc( (100% / 6) - 10px);
     text-align: center;
 }
 
-.song img {
+
+.artist {
+    border-radius: 100px;
+}
+
+.card img {
     max-width: 100%;
 }
 

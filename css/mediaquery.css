@@ -1,7 +1,7 @@
 
 
 @media screen and ( max-width: 870px ) {
-    .song-card>.song {
+    .card-album>.card {
         width: calc( (100% / 4) - 10px);
     }
 }
@@ -41,17 +41,17 @@
         width: calc( 100% - 70px );
     }
 
-    .song-card {
+    .card-album {
         display: flex;
         gap: 5px;
         flex-wrap: wrap;
     }
 
-    /* .song-card>.song{
+    /* .card-album>.card{
         flex-basis: 45%;
     } */
 
-    .song-card>.song {
+    .card-album>.card {
        width: calc( (100% / 2) - 10px);
     }
 }
