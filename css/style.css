@@ -21,8 +21,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
     color: #c7c7c7;
+    font-weight: 600;
 }
 
 .white {
@@ -105,8 +105,9 @@ li svg {
     display: flex;
 }
 
-.line>span {
+.line>a {
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .profile {
@@ -123,6 +124,7 @@ li svg {
 .download {
     height: 30px;
     width: 30px;
+    margin-left: -5px;
 }
 
 .download img{
@@ -216,8 +218,7 @@ section {
 
 .wrapper {
     position: relative;
-    width: fit-content;
-    height: fit-content;
+
 }
 
 .overlay {
