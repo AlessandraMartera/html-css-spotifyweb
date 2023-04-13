@@ -270,6 +270,7 @@ footer>div {
 }
 
 .left-footer {
+    margin-left: 10px;
     width: 20%;
     display: flex;
     align-items: center;
@@ -333,6 +334,7 @@ footer>div {
     align-items: center;
     justify-content: space-around;
     gap:4px;
+    margin-right: 10px;
 }
 
 /* Debug */

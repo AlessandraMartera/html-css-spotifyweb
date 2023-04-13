@@ -4,6 +4,11 @@
     .card-album>.card {
         width: calc( (100% / 4) - 10px);
     }
+
+    .left-footer img {
+        display: none;
+    }
+
 }
 
 @media screen and ( max-width: 552px ) {
