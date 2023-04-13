@@ -262,7 +262,7 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-footer i:hover{
+footer .fa-circle-play:hover{
     cursor: pointer;
     font-weight: 600;
     font-size: 30px;
