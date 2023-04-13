@@ -121,10 +121,13 @@ li svg {
 }
 
 .download {
-    display: inline-block;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
+.download img{
+    width: 100%;
+}
 /* main */
 main {
     position: relative;
@@ -318,13 +321,30 @@ footer>div {
 }
 
 
-.prog-bar hr {
+.prog-bar .prog {
     height: 100%;
     background-color: #c7c7c7;
     width: 20%;
+
 }
-.time-song:hover hr, .prog-bar:hover hr, .fa-volume-high:hover hr {
+.time-song:hover .prog, .prog-bar:hover .prog, .fa-volume-high:hover .prog {
     background-color: greenyellow;
+    position: relative;
+}
+
+.pointer{
+    display: none;
+}
+
+.time-song:hover .pointer, .prog-bar:hover .pointer, .fa-volume-high:hover .poiter {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: #fff;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
 }
 
 .right-footer {

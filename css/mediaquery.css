@@ -1,6 +1,8 @@
 
 
 @media screen and ( max-width: 870px ) {
+
+
     .card-album>.card {
         width: calc( (100% / 4) - 10px);
     }
@@ -30,7 +32,12 @@
         display: block;
         width: 100%;
     }
-
+    
+    /* .download {
+        width: 30px;
+        height: 30px;
+        background-position: 20%;
+    } */
     #ico-small img{ 
         width: 30px;
         margin: 0;
