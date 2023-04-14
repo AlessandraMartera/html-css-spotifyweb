@@ -21,8 +21,7 @@ a {
 }
 
 a:hover {
-    color: #c7c7c7;
-    font-weight: 600;
+    color: #ffffff;
 }
 
 .white {
@@ -148,17 +147,19 @@ main {
 }
 
 #upgrade button {
-    color: #fff;
+    color: #7b7d82;
     padding: 10px 30px;
     border-radius: 40px;
-    border: 2px solid #fff;
+    border: 2px solid #7b7d82;
     background-color: #00000000;
     cursor: pointer;
 }
 
 #upgrade button:hover {
     font-size: 15px;
-    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1);
 }
 
 #album {
@@ -218,7 +219,6 @@ section {
 
 .wrapper {
     position: relative;
-
 }
 
 .overlay {
@@ -264,8 +264,7 @@ footer {
 }
 footer .fa-circle-play:hover{
     cursor: pointer;
-    font-weight: 600;
-    font-size: 30px;
+    transform: scale(1.4);
 }
 
 footer>div {
